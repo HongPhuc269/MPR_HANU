@@ -6,33 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-  <TextView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginLeft="30dp"
-      android:layout_marginRight="30dp"
-      android:text="What is your name ?"
-      android:id="@+id/txtQuestion"
-      android:layout_marginTop="60dp"
-      android:textSize="25dp"/>
+    <ImageView
+        android:id="@+id/imgTheme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/theme" />
 
-  <EditText
-      android:id="@+id/txtName"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_below="@+id/txtQuestion"
-      android:layout_marginTop="10dp"
-      android:layout_marginLeft="30dp"
-      android:layout_marginRight="30dp"
-      android:textSize="20dp"
-      android:hint="Name" />
+    <TextView
+        android:id="@+id/txtQues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="100dp"
+        android:text="Whar is your name?"
+        android:textColor="#e00d26"
+        android:textSize="20dp" />
 
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtQues"
+        android:hint="Name"
+        />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtBtn"
-        android:text="Click me!"
+        android:text="Click Me!"
+        android:id="@+id/btnClick"
         android:layout_below="@+id/txtName"
         android:layout_centerHorizontal="true"/>
 
+    <ImageView
+        android:id="@+id/imgAnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/download"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_below="@+id/btnClick"
+        />
 </RelativeLayout>
